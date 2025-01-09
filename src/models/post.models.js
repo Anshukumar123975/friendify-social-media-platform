@@ -9,21 +9,21 @@ const postSchema = new mongoose.Schema({
         type: mongoose.Schema.Types.ObjectId,
         ref: "User",
     },
-    like: {
-        type: Number,
-        default: 0,
-    },
-    comment: {
-        type: String,
-    },
     content: {
         type: String,
         required: true,
     },
     media: {
         type: String,
+    },
+    like: {
+        type: Number,
+        default: 0,
+    },
+    comment: {
+        type: String,
     }
 },{timestamps: true }
 )
 
-export const post = mongoose.model("post",postSchema);
+export const Post = mongoose.model("Post",postSchema);
