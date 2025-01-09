@@ -1,5 +1,4 @@
 import mongoose from "mongoose"
-
 const postSchema = new mongoose.Schema({
     username: {
         type: mongoose.Schema.Types.ObjectId,
@@ -27,4 +26,4 @@ const postSchema = new mongoose.Schema({
 },{timestamps: true }
 )
 
-export const Post = mongoose.model("Post",postSchema);
+export const Post = mongoose.model("Post",postSchema); 
